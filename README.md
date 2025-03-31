@@ -1,12 +1,10 @@
 # FinTrack
 
-Overview
+# Overview
 
 Financial Tracker is a web application that helps users manage their personal finances, track income and expenses, plan budgets, and analyze spending habits with interactive charts.
 
-Features
-
-Frontend (Angular)
+# Frontend (Angular)
 
 User Authentication (JWT): Register, login, logout.
 
@@ -20,7 +18,7 @@ Recurring Payments: Set up reminders for upcoming expenses.
 
 Routing & State Management: Configured Angular routing and state handling.
 
-Backend (Django + DRF)
+# Backend (Django + DRF)
 
 Models:
 
@@ -51,7 +49,7 @@ Periodic Tasks (Optional):
 Celery + Redis for scheduled payment reminders.
 
 
-API Documentation
+# API Documentation
 
 Available via Postman collection (TBD)
 
