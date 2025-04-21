@@ -1,0 +1,33 @@
+/* src/app/features/analytics/analytics-view.component.css */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .chart-container {
+    max-width: 700px; /* График енін шектеу */
+    height: 400px; /* График биіктігін беру маңызды */
+    margin: 20px auto; /* Ортаға келтіру */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+  }
+  
+  /* Ngx-charts легендасының түсін өзгерту (мысал) */
+  /* :host ::ng-deep .ngx-charts .legend-label {
+     color: #333 !important;
+  } */
+  
+  .loading-indicator, .no-data {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  .alert {
+    max-width: 700px;
+    margin: 20px auto;
+  }

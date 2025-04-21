@@ -1,0 +1,24 @@
+<h2>Categories</h2>
+
+<div class="add-item-form">
+  <input type="text" placeholder="New category name" [(ngModel)]="newCategoryName" [disabled]="addLoading">
+  <button (click)="addCategory()" [disabled]="!newCategoryName || addLoading">
+     <span *ngIf="!addLoading">Add</span>
+     <span *ngIf="addLoading">Connecting...</span>
+  </button>
+</div>
+<div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+
+<div *ngIf="loading" class="loading-indicator">Loading...</div>
+
+<ul *ngIf="!loading && categories.length > 0" class="item-list">
+  <li *ngFor="let category of categories">
+    <span>{{ category.name }}</span>
+    <button (click)="deleteCategory(category.id)" [disabled]="deleteLoading[category.id]" class="delete-button">
+       <span *ngIf="!deleteLoading[category.id]">Delete</span>
+       <span *ngIf="deleteLoading[category.id]">Deleting...</span>
+    </button>
+  </li>
+</ul>
+
+<p *ngIf="!loading && categories.length === 0">No categories added yet.</p>

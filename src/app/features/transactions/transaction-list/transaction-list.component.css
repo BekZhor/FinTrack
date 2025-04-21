@@ -1,0 +1,119 @@
+.add-transaction-button {
+    margin-bottom: 20px;
+    text-align: right; 
+  }
+  
+  .btn { 
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #1abc9c;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #16a085;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 1px solid #e9ecef;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .filter-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #495057;
+    font-weight: 500;
+  }
+  
+  .filter-group select, .filter-group input[type="date"] {
+    padding: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    min-width: 150px; 
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    border: 1px solid #e9ecef;
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .transaction-table thead th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .transaction-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .transaction-table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .transaction-table td.amount {
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap; 
+  }
+  
+  .transaction-income td.amount { color: #27ae60; }
+  .transaction-expense td.amount { color: #c0392b; }
+  
+  .action-link {
+    text-decoration: none;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin-right: 5px; 
+    border: none;
+    background: none;
+  }
+  
+  .action-link.edit { color: #007bff; }
+  .action-link.delete { color: #dc3545;  }
+  .action-link:hover { text-decoration: underline; }
+  button.action-link { font-family: inherit;  } 
+  
+  .loading-indicator, .no-data {
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+  
+  .alert { margin-top: 15px; }

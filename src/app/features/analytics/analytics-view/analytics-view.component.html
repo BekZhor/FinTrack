@@ -1,0 +1,19 @@
+<h2>Analytics: Cost Share</h2>
+
+<div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+<div *ngIf="loading" class="loading-indicator">Loading analytics data...</div>
+
+<div *ngIf="!loading && !error" class="chart-container">
+  <ngx-charts-pie-chart *ngIf="expenseByCategoryData.length > 0"
+    [results]="expenseByCategoryData"
+    [gradient]="gradient"
+    [legend]="showLegend"
+    [legendPosition]="legendPosition"
+    [labels]="showLabels"
+    [doughnut]="isDoughnut"
+    (select)="onSelect($event)">
+  </ngx-charts-pie-chart>
+   <p *ngIf="expenseByCategoryData.length === 0" class="no-data">
+    Expense data is not yet available or categories are not provided.
+   </p>
+</div>
