@@ -1,59 +1,28 @@
-# FinancialTrackerFront
+# FinTrack
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+# Overview
 
-## Development server
+Financial Tracker is a web application that helps users manage their personal finances, track income and expenses, plan budgets, and analyze spending habits with interactive charts.
 
-To start a local development server, run:
+# Group Members
 
-```bash
-ng serve
-```
+1) 23B031092 - Zhorabek Beknur
+   
+2) 23B030315 - Tlek Margulan
+   
+3) 23B030373 - Marat Alikhan
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Key Features
 
-## Code scaffolding
+- **Income and Expense Tracking**: Easily record and monitor income and expenses with detailed categories (e.g., Food, Transport, Entertainment).
+- **Transaction Categorization**: Classify transactions into predefined categories to help track where your money is going.
+- **Budgeting Tools**: Set up and track monthly budgets for various categories and monitor your progress.
+- **JWT Authentication**: Secure login and registration system using JSON Web Token (JWT), ensuring safe access to personal financial data.
+- **CRUD Operations**: Full support for Create, Read, Update, and Delete (CRUD) operations on transactions, categories, and wallets.
+- **Transaction Filtering and Sorting**: Filter transactions by date, category, and type (income or expense), and sort by various criteria.
+  
+## Technologies Used
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Frontend**: Angular
+- **Backend**: Django
+- **Authentication**: JWT (using Django Simple JWT)
