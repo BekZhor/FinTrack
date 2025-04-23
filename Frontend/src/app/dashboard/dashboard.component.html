@@ -1,0 +1,15 @@
+<div class="dashboard-header">
+    <div class="user-greeting">
+      Привет, {{ username }}!
+    </div>
+  
+    <div class="wallets-list">
+        <h3>Твои кошельки:</h3>
+        <div class="wallet-card" *ngFor="let wallet of wallets">
+          <div class="wallet-name">{{ wallet.name }}</div>
+          <div class="wallet-balance">Баланс: {{ wallet.balance }} ₸</div>
+        </div>
+    </div>
+
+</div>
+  
