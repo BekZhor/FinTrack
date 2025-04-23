@@ -30,8 +30,7 @@ class Budget(models.Model):
         unique_together = ('user', 'wallet', 'month') 
 
     def __str__(self):
-        wallet_name = self.wallet.name if self.wallet else 'Все кошельки'
-        return f"{self.user.username} —{wallet_name} — {self.month.strftime('%B %Y')} — {self.amount}"
+        return f"{self.user.username}  — {self.month.strftime('%B %Y')} — {self.amount}"
 
 
 class Transaction(models.Model):
